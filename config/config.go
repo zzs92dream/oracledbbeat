@@ -5,10 +5,14 @@ package config
 
 import "time"
 
+// Config ...
 type Config struct {
-	Period time.Duration `config:"period"`
+	Period  time.Duration `config:"period"`
+	OciURLs []string      `config:"OciURLs"`
 }
 
+// DefaultConfig ...
 var DefaultConfig = Config{
-	Period: 1 * time.Second,
+	Period:  10 * time.Second,
+	OciURLs: nil,
 }

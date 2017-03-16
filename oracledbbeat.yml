@@ -4,7 +4,12 @@
 
 oracledbbeat:
   # Defines how often an event is sent to the output
-  period: 1s
+  period: 5s
+  # Defines Oracle Connections to monitor,
+  # For example:
+  # TODO: Add connection examples for local and remote dbs
+  #OciURLs: ["user/password@host:port/ORACLE_SERVICE_NAME"]
+  #OciURLs: ["user/password@TNS_ALIAS"]
 
 #================================ General =====================================
 
@@ -33,8 +38,8 @@ output.elasticsearch:
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
-  #username: "elastic"
-  #password: "changeme"
+  username: "elastic"
+  password: "changeme"
 
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
