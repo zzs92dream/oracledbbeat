@@ -1,5 +1,7 @@
 # Oracledbbeat
 
+:exclamation: This beat is under construction. Please do not use in production environments.
+
 Welcome to Oracledbbeat.
 
 Ensure that this folder is at the following location:
